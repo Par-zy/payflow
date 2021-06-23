@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 300,
                 )),
             Positioned(
-              bottom: size.height * 0.21,
+              bottom: size.height * 0.18,
               left: 0,
               right: 0,
               child: Column(
@@ -57,7 +57,11 @@ class _LoginPageState extends State<LoginPage> {
                   Padding(
                     padding:
                         const EdgeInsets.only(left: 40, right: 40, top: 40),
-                    child: SocialLoginButton(),
+                    child: SocialLoginButton(
+                      onTap: () {
+                        print("clicou");
+                      },
+                    ),
                   )
                 ],
               ),
